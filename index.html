@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>廖浩君 WeHelp 轉職計畫</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-image: linear-gradient(to bottom,
+          rgba(255, 255, 255, 0.6),
+          rgba(255, 255, 255, 0.1)),
+        url("https://i.meee.com.tw/TGlypFQ.jpg");
+      background-attachment: scroll;
+      background-size: cover;
+      background-repeat: repeat;
+      background-attachment: fixed;
+
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background: #333;
+      color: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      flex: 1;
+      margin: 0;
+      font-size: 1.8rem;
+      text-align: center;
+    }
+
+    header h1 a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 30px;
+      height: 25px;
+      cursor: pointer;
+    }
+
+    .menu-toggle span {
+      display: block;
+      width: 100%;
+      height: 3.2px;
+      background: #fff;
+    }
+
+    nav {
+      background: #444;
+      display: flex;
+      justify-content: center;
+      padding: 8px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav ul li a {
+      display: block;
+      padding: 10px 15px;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    nav ul li a:hover {
+      background: #666;
+      border-radius: 5px;
+    }
+
+    section {
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 12px;
+      background: #f4f4f492;
+      max-width: 952px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.346);
+    }
+
+    section h2 {
+      font-size: 1.45rem;
+      text-align: center;
+      margin: 8px auto;
+    }
+
+    img {
+      width: 100%;
+      max-width: 300px;
+      display: block;
+      margin: 20px auto;
+      border-radius: 12px;
+    }
+
+    ol li a {
+      color: #597984;
+      text-decoration: none;
+    }
+
+    ol li a:hover {
+      color: #144555;
+      text-decoration: none;
+    }
+
+    p,
+    section ol,
+    section ul {
+      padding-left: 72px;
+      padding-right: 72px;
+    }
+
+    footer {
+      background: #333;
+      color: #fff;
+      padding: 8px;
+    }
+
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      max-width: 960px;
+      flex-wrap: wrap;
+      margin: 20px auto;
+
+    }
+
+    .footer-container p {
+      margin: 0;
+      font-size: 1rem;
+    }
+
+    .footer-container a {
+      color: #cccbcb;
+      text-decoration: none;
+    }
+
+    .footer-container a:hover {
+      text-decoration: underline;
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: row;
+        /* 確保標題和按鈕橫向排列 */
+        justify-content: space-between;
+        /* 讓內容兩端對齊 */
+      }
+
+      .menu-toggle {
+        display: flex;
+        margin-left: auto;
+      }
+
+      nav {
+        display: none;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 100%;
+        background: #444;
+        z-index: 999;
+      }
+
+      nav.active {
+        display: block;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav ul li a {
+        text-align: center;
+        padding: 15px;
+      }
+
+      header h1 {
+        text-align: left;
+        margin-left: 20px;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      section {
+        margin: 15px 30px;
+        padding: 15px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      section {
+        margin: 8px 12px;
+        padding: 8px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <h1><a href="./">廖浩君 WeHelp 轉職計畫</a></h1>
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav id="nav">
+    <ul>
+      <li><a href="#intro">自介與動機</a></li>
+      <li><a href="#learning">學習經驗</a></li>
+      <li><a href="#time-plan">學習安排</a></li>
+      <li><a href="#career">投入領域</a></li>
+      <li><a href="#emotion">情緒管理</a></li>
+      <li><a href="#feedback">技術心得</a></li>
+      <li><a href="#society">職涯與社會</a></li>
+      <li><a href="#other">其他事項</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="intro">
+      <h2>自介與動機</h2>
+      <img src="https://i.meee.com.tw/ZrpRJZ7.png" alt=" 這是我">
+      <p>
+        我叫廖浩君，曾就讀於台南大學視覺藝術與設計學系，擁有設計背景及現場解決問題的經驗。<br />2021/5-2022/6在大聲設計擔任視覺設計師一年，客製化設計品牌視覺系統並優化公司網站，使客戶轉換率提升。<br />後在大塚製藥2023/4-2024/9擔任現場作業員，著手排除機台問題並提高生產效率。<br />因緣際會下在選擇具有專業性的職涯時，發掘前端工程師是一個充滿挑戰且具發展潛力的領域，決心轉職並已全力投入學習，期待參加WeHelp訓練營，磨練實力並進入前端職場。
+      </p>
+    </section>
+    <section id="learning">
+      <h2>學習經驗</h2>
+      <ol class="content">
+        <li>網站優化經驗：曾使用套版網站優化公司頁面，透過視覺調整和內容配置，成功提升網站轉換率。</li>
+        <li>WebFlow <a href="https://liao-hj-design.webflow.io/" target="_blank">自建網站：</a>嘗試個人網站架設。</a></li>
+        <li>HTML / CSS 基礎學習：透過Udemy線上課程，打下前端基本功。</li>
+        <li>JavaScript 基礎學習：在BiliBili平台學習黑馬程序員課程，進行習題練習，加強邏輯思維與應用能力。</li>
+      </ol>
+    </section>
+    <section id="time-plan">
+      <h2>學習安排</h2>
+      <p>目前已辭去工作，擁有全職學習的時間，將每天投入8-10小時進行WeHelp訓練營的排程和任務。<br />
+        每週一早上 10:00 ：任務安排與引導關鍵技術。
+      </p>
+      <ul>
+        根據任務去找資源，並分析所需要的總時數，再由時數去切成五等份。
+        <li>
+          上午：根據每日切分出來的任務去實作，並將不懂與疑惑的點先記錄起來。
+        </li>
+        <li>
+          下午：重複上午的內容，在休息前開始找答案。
+        </li>
+        <li>
+          晚上：撰寫每日進度報告。
+        </li>
+      </ul>
+    </section>
+    <section id="career">
+      <h2>投入領域與回報</h2>
+      <ol>
+        <li>市場需求：透過Google趨勢及104職缺分析，發現前端工程師在市場上有穩定的需求。</li>
+        <li>個人期待：我對創造具吸引力的互動體驗充滿熱情。過去在視覺設計工作中，我學會了如何將抽象概念轉化為具體的視覺系統，現在希望透過程式開發，將這些設計帶入網站或應用中，實現更豐富的用戶體驗與更高的薪資。</li>
+      </ol>
+    </section>
+    <section id="emotion">
+      <h2>情緒管理</h2>
+      <p>經歷：在設計公司工作時，因為外包案件，導致品質下滑，也造成高壓的重工情況。<br />
+        處理方式：我選擇冷靜面對，先將當下工作完成，先確保客戶滿意。隨後反思這份工作與自己的初衷不符，決定離職並重新尋找能發揮專長的方向。這次經驗也讓我學會在負面情緒中保持理智，專注於解決問題。</p>
+    </section>
+    <section id="feedback">
+      <h2>技術心得</h2>
+      <p>過去在進行網站優化時，體會到SEO與畫面視覺的重要性。調整版面配置與視覺設計可以提升使用者停留時間，在相同預算廣告費下也更能有效提升SEO及整體轉換率。這讓我理解技術與設計必須協同合作，才能達到最佳效果。</p>
+    </section>
+    <section id="society">
+      <h2>職涯與社會</h2>
+      <p>
+        我計劃成為一名前端工程師，結合過去的視覺設計背景與新學到的開發技能，專注於打造視覺和使用體驗優秀的網頁或應用程式。我預計在 6 月中求職，希望能加入一個鼓勵成長的團隊，持續學習並產出優質的產品。
+      </p>
+    </section>
+    <section id="other">
+      <h2>其他事項</h2>
+      <p>從設計師到現場作業員的轉換，再到現在全心學習前端技術，我始終保持學習的熱忱與解決問題的耐心。過程中雖曾碰壁，但每次挫折都讓我更清楚自己的方向。參加WeHelp
+        Bootcamp是我轉職路上的關鍵一步，期待透過嚴格的訓練，蛻變成一名真正能為團隊帶來價值的前端工程師。</p>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <p>Phone：<a href="tel:+886988169432">+886 988-169-432</a></p>
+      <p>Email：<a href="mailto:haojunliao9527@gmail.com">haojunliao9527</a></p>
+      <p>My Personal Website.：<a href="https://liao-hj-design.webflow.io/" target="_blank">liao-hj-design</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const nav = document.getElementById("nav");
+
+    menuToggle.addEventListener("click", () => {
+      nav.classList.toggle("active");
+    });
+
+    const navLinks = document.querySelectorAll("nav ul li a");
+
+    navLinks.forEach(link => {
+      link.addEventListener("click", e => {
+        e.preventDefault();
+        const targetId = link.getAttribute("href").substring(1);
+        const targetSection = document.getElementById(targetId);
+
+        if (targetSection) {
+          window.scrollTo({
+            top: targetSection.offsetTop - 60,
+            behavior: "smooth",
+          });
+          nav.classList.remove("active");
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
